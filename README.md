@@ -1,16 +1,22 @@
-# React + Vite
+# Color Challenge
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React + Vite app.
 
-Currently, two official plugins are available:
+## Setup
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```bash
+npm install
+npm run dev
+```
 
-## React Compiler
+## AI Reflection
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+*Use this section to reflect on how you used AI while working on this project.*
 
-## Expanding the ESLint configuration
+- **How I used AI** : I used AI to firstly help me debug some of the CSS error I was getting  when looking at the broswer's inspect. I then used it as a reference for CSS properties. I also used Ai to give syntax for OnClick. Other than that, I used cursor to reorganize my repo strucutre a nd to give me a simple template for the ReadMe document. 
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+***Prompts*** 
+
+ - Give me CSS properties when styling divs
+
+ - What is syntax when using a varible to set a background color
