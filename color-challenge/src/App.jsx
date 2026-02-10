@@ -5,16 +5,23 @@ import './App.css'
 
 function App() {
 
+  // function to generate hex color code, https://www.30secondsofcode.org/js/s/random-hex-color-code/
   const randomHexColorCode = () => {
     let n = (Math.random() * 0xfffff * 1000000).toString(16);
     return '#' + n.slice(0, 6);
   };
+  // sets the answer whether reset, win, or lose
   const [answer, setAnswer] = useState('---')
-  const [color, setColor] = useState([
+  // generaets the colors 
+  const [color] = useState([
     randomHexColorCode(),
     randomHexColorCode(), 
     randomHexColorCode()
   ]);
+ 
+  // get random number 1-3 -> 0, 1, 2
+  const [correctNumber] = useState(Math.floor(Math.random() * 3));
+  console.log(correctNumber)
   
 
   return (
