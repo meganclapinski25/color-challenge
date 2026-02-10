@@ -32,9 +32,9 @@ function App() {
       
         <h3>Click this Color: {correctColor}</h3>
         <div className='container'>
-          <div className='square' style={{ backgroundColor: color[0] }}> </div>
-          <div className='square ' style={{ backgroundColor: color[1] }}> </div>
-          <div className='square ' style={{ backgroundColor: color[2] }}> </div>
+          <div className='square' style={{ backgroundColor: color[0] }}>{color[0]} </div>
+          <div className='square ' style={{ backgroundColor: color[1] }}>{color[1]} </div>
+          <div className='square ' style={{ backgroundColor: color[2] }}> {color[2]}</div>
 
           
         </div>
