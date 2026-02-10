@@ -26,7 +26,7 @@ function App() {
   // gets the answer color at correctNumber
   const [correctColor] = useState(color[correctNumber])
 
-
+// handles when user wants to guess what div it is / square. The click handles the state of the answer 
   const handleClick = (index) =>{
     if (index === correctNumber) {
       setAnswer('Correct')
@@ -35,6 +35,11 @@ function App() {
       setAnswer('Incorrect')
     }
   };
+
+  // Finishing reset button, just going to reload window. 
+  const reset = () =>{
+    window.location.reload();
+  }
 
 
   return (
@@ -51,7 +56,9 @@ function App() {
         <div className='answer'>
            {answer}
         </div>
-        <button className='button'>Reset</button>
+
+
+        <button className='button' onClick={reset}>Reset</button>
           
         
     </div>
