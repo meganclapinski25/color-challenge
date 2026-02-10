@@ -23,15 +23,18 @@ function App() {
   const [correctNumber] = useState(Math.floor(Math.random() * 3));
   console.log(correctNumber)
   
+  // gets the answer color at correctNumber
+
+  const [correctColor] = useState(color[correctNumber])
 
   return (
     <div className='overall'>
       
-        <h3>Click this Color: {color}</h3>
+        <h3>Click this Color: {correctColor}</h3>
         <div className='container'>
-          <div className='square'> </div>
-          <div className='square '> </div>
-          <div className='square '> </div>
+          <div className='square' style={{ backgroundColor: color[0] }}> </div>
+          <div className='square ' style={{ backgroundColor: color[1] }}> </div>
+          <div className='square ' style={{ backgroundColor: color[2] }}> </div>
 
           
         </div>
